@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Lab 2 - Problem 7</title>
+        <style type="text/css">
+            input {
+                width: 350px;
+            }
+            button {
+                padding:8px;
+                margin-top: 20px;
+                font-weight:bold;
+                border: 2px solid rgb(88, 9, 88);
+                color:rgb(88, 9, 88);
+                background-color: white;
+            }
+            thead > tr > th {
+                padding: 5px;
+                background-color:rgb(231, 232, 243);
+                text-align: left;
+                border-left: 3px solid rgb(88, 9, 88);
+                border-top: 1px solid gray;
+                border-right: 1px solid gray;
+                border-bottom: 1px solid gray;
+            }
+            .fieldname {
+                font-weight: bold;
+            }
+            .star {
+                color:red;
+            }
+            #focusing-button {
+                background-color: rgb(88, 9, 88);
+                color: white
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <table>
+                <colgroup>
+                    <col style="width:500px">
+                    <col style="width:500px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2">TÀI KHOẢN CỦA BẠN</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <button type="submit">CẬP NHẬT THÔNG TIN</button>                      
+                        </th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th colspan="2">
+                            <button name="quan-li-tai-khoan" id="focusing-button">QUẢN LÍ TÀI KHOẢN</button>
+                            <button name="quan-li-don-hang">QUẢN LÍ ĐƠN HÀNG</button>
+                            <button name="thay-doi-mat-khau">THAY ĐỔI MẬT KHẨU</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Bạn có thể cập nhật thông tin của mình tại các trường dưới đây<br>Lưu ý: Những trường có dấu "<span class="star">*</span>" là bắt buộc</p>
+                        </td>
+                    </tr>
+                    <tr id="row_1">
+                        <td>
+                            <label for="full-name"><span class="fieldname">Họ và tên</span><span class="star">*</span></label><br>
+                            <input name="full-name" id="full-name" type="text" value="Nguyễn Văn A" required="">
+                        </td>
+                        <td>
+                            <label for="date"><span class="fieldname">Ngày Sinh</span></label><br>
+                            <input type="date" id="date" name="date" value="1990-01-01" />
+                        </td>
+                    </tr>
+                    <tr id="row_2">
+                        <td>
+                            <label for="city"><span class="fieldname">Tỉnh/Thành phố</span><span class="star">*</span></label><br>
+                            <input name="city" id="city" type="text" value="TP Hồ Chí Minh" required="">
+                        </td>
+                        <td>
+                            <label for="company"><span class="fieldname">Công ty</span></label><br>
+                            <input type="text" id="company" name="company" placeholder="Công ty của bạn" />
+                        </td>
+                    </tr>
+                    <tr id="row_3">
+                        <td>
+                            <label for="district"><span class="fieldname">Quận-Huyện</span><span class="star">*</span></label><br>
+                            <input name="district" id="district" type="text" value="Quận 5" required="">
+                        </td>
+                        <td>
+                            <label for="role"><span class="fieldname">Chức vụ</span></label><br>
+                            <input type="text" id="role" name="role" placeholder="Chức vụ tại công ty" />
+                        </td>
+                    </tr>
+                    <tr id="row_4">
+                        <td>
+                            <label for="address"><span class="fieldname">Địa chỉ</span><span class="star">*</span></label><br>
+                            <input name="address" id="address" type="text" value="271/2 An Dương Vương, Phường 3, Quận 5, TP.HCM" required="">
+                        </td>
+                        <td>
+                            <label for="flower"><span class="fieldname">Bạn thích Loại hoa</span></label><br>
+                            <input type="text" id="flower" name="flower" placeholder="Hoa hồng, Hoa lan..." />
+                        </td>
+                    </tr>
+                    <tr id="row_5">
+                        <td>
+                            <label for="phone-number"><span class="fieldname">Số điện thoại</span><span class="star">*</span></label><br>
+                            <input name="phone-number" id="phone-number" type="text" value="0973 371 346" required="">
+                        </td>
+                        <td>
+                            <label for="flower-color"><span class="fieldname">Bạn thích Màu hoa</span></label><br>
+                            <input type="text" id="flower-color" name="flower-color" placeholder="Màu đỏ, Màu tím,..." />
+                        </td>
+                    </tr>
+                    <tr id="row_6">
+                        <td>
+                            <label for="email"><span class="fieldname">Email</span><span class="star">*</span></label><br>
+                            <input name="email" id="email" type="email" value="nguyenvana@gmail.com" required="">
+                        </td>
+                        <td>
+                            <label for="flowering-style"><span class="fieldname">Phong cách cầm hoa</span></label><br>
+                            <input type="text" id="flowering-style" name="flowering-style" placeholder="Cổ điển, Hiện đại, Đơn giản, Dễ thương." />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
